@@ -1,0 +1,124 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("image/bg-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url("image/bg-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+}
+
+.main-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;
+    height: 170px;
+    padding-left: 60px;
+}
+
+.nav {
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    color: #0070fa;
+}
+
+.menu-btn {
+    margin-right: 60px;
+}
+
+.menu-btn button {
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+}
+
+main{
+    width: 100%;
+   /*height: 100px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-sec img {
+    width: 400px;
+    margin-right: 50px;
+}
+
+.left-sec button{ 
+    padding: 10px;
+    background-image: linear-gradient(to right,#649bff,#0070fa, #649bff);
+    border-radius: 10px;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.left-sec {
+    margin-left: 80px;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.change_content::after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #0070fa;
+}
+
+@keyframes changetext {
+    0% {content: "(Behaviour)";}
+    20% {content: "(Knowledge)";}
+    35% {content: "(Build Your Future)";}
+    60% {content: "(Computer Expert)";}
+    80% {content: "(Knowldege)";}
+    100% {content: "(Web Developement)";}
+}
+
+.footer {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+.footer p {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
